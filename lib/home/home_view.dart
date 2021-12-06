@@ -1,4 +1,5 @@
 //! Home view include all of item in site such as Navigation bar, Project view and so on!
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:hamidravanbod/experience/experience_view.dart';
@@ -6,6 +7,7 @@ import 'package:hamidravanbod/footer/footer_view.dart';
 import 'package:hamidravanbod/header/header_view.dart';
 import 'package:hamidravanbod/project/project_view.dart';
 import 'package:hamidravanbod/skills/skills_view.dart';
+import 'package:responsive_builder/responsive_builder.dart';
 
 class HomeView extends StatefulWidget {
   const HomeView({Key? key}) : super(key: key);
@@ -56,12 +58,14 @@ class _HomeViewState extends State<HomeView> {
           ],
         ),
         centerTitle: true,
-        title: const Text('Hamid Ravanbod',
-            style: TextStyle(
-                fontFamily: 'bradly',
-                color: Colors.redAccent,
-                fontWeight: FontWeight.bold,
-                fontSize: 40)),
+        title: ResponsiveBuilder(builder: (context, size) {
+          return Text('Hamid Ravanbod',
+              style: TextStyle(
+                  fontFamily: 'bradly',
+                  color: Colors.redAccent,
+                  fontWeight: FontWeight.bold,
+                  fontSize: size.isDesktop ? 40 : 18));
+        }),
       ),
       //endDrawer: DrawerView(),
       body: SizedBox(
