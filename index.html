@@ -24,6 +24,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <link rel="stylesheet" type="text/css" href="styles.css">
 
     <!-- Main Favicon -->
     <link rel="icon" type="image/pg" href="favicon/png"/>
@@ -34,11 +35,20 @@
   <link rel="manifest" href="manifest.json">
 </head>
 <body>
+  <img src="img/mainIcon.png" class="center"/>
+  <div class="circle"></div>
+        <div class="circle-small"></div>
+        <div class="circle-big"></div>
+        <div class="circle-inner-inner"></div>
+        <div class="circle-inner"></div>
+  <!-- <img src="img/please.png" class="bottomcenter"/> -->
+
   <!-- This script installs service_worker.js to provide PWA functionality to
        application. For more information, see:
        https://developers.google.com/web/fundamentals/primers/service-workers -->
+
   <script>
-    var serviceWorkerVersion = '2027218035';
+    var serviceWorkerVersion = '4231117363';
     var scriptLoaded = false;
     function loadMainDartJs() {
       if (scriptLoaded) {

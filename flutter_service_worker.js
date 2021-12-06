@@ -51,10 +51,13 @@ const RESOURCES = {
 "icons/ms-icon-150x150.png": "b57b246b8342ee4d80c71f32b0449a9a",
 "icons/ms-icon-310x310.png": "d3a8372e13fc72553a79bee15eb1de85",
 "icons/ms-icon-70x70.png": "1d1eed8966fb0a4a9c565c393d8ea82b",
-"index.html": "de5976b15a3c1d5150b909634a1adb0e",
-"/": "de5976b15a3c1d5150b909634a1adb0e",
-"main.dart.js": "edc8d621cea5dff7b247b1278185b4f9",
+"img/mainIcon.png": "0881161531de991477bfad796d764885",
+"img/please.png": "712402ac580247c5dcdbb487cbd54605",
+"index.html": "a360b739c621f46dbee7aa9fb410eb91",
+"/": "a360b739c621f46dbee7aa9fb410eb91",
+"main.dart.js": "47a9d5283120390492c247348540f7c4",
 "manifest.json": "ac7ba602e4b1d339402a64deb8a5c475",
+"styles.css": "7b80b35a96da2ebadbcf2856dc35cc7b",
 "version.json": "779fd6cc4216be0958994e7d40ac95d3"
 };
 
