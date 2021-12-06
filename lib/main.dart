@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
                 color: Colors.black, fontFamily: 'comic', fontSize: 30),
           ),
           fontFamily: 'comic'),
-      home: HomeView(),
+      home: const HomeView(),
     );
   }
 }

@@ -71,17 +71,20 @@ class _HomeViewState extends State<HomeView> {
       body: SizedBox(
           width: width,
           height: height,
-          child: SingleChildScrollView(
-              child: Column(
-            children: const [
-              //Container(color: Colors.yellow),
-              HeaderView(),
-              ProjectView(),
-              SkillsView(),
-              ExperienceView(),
-              FooterView()
-            ],
-          ))
+          child: Scrollbar(
+            isAlwaysShown: true,
+            child: SingleChildScrollView(
+                child: Column(
+              children: const [
+                //Container(color: Colors.yellow),
+                HeaderView(),
+                ProjectView(),
+                SkillsView(),
+                ExperienceView(),
+                FooterView()
+              ],
+            )),
+          )
 
           // child: SingleChildScrollView(
           //   //  controller: scrollController,
